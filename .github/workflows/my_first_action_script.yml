@@ -21,7 +21,7 @@ jobs:
         uses: lukka/get-cmake@latest
         
       - name: Run my uses
-        uses: ./.github/actions/action
+        uses: actions/test-github-actions@v2
         with:
           who-to-greet: 'Stepan Bandera'
         
