@@ -21,9 +21,14 @@ jobs:
         uses: lukka/get-cmake@latest
         
       - name: Run my uses
-        uses: actions/test-github-actions@v2
+        id: hello
+        uses: actions/test-github-actions@v1
         with:
           who-to-greet: 'Stepan Bandera'
+      
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        
         
       - name: Install VCPKG
         run: |
