@@ -22,6 +22,7 @@ jobs:
         
       - name: Install VCPKG
         run: |
+          lsb_release -a
           cmake --version
           git clone https://github.com/microsoft/vcpkg.git
           cd VCPKG
