@@ -22,6 +22,7 @@ jobs:
         
       - name: Install VCPKG
         run: |
+          cmake --version
           git clone https://github.com/microsoft/vcpkg.git
           cd VCPKG
           ./bootstrap-vcpkg.sh
