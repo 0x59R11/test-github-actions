@@ -20,6 +20,11 @@ jobs:
       - name: Install latest CMake and Ninja
         uses: lukka/get-cmake@latest
         
+      - name: Run my uses
+        uses: actions/test-github-actions@v2
+        with:
+          who-to-greet: 'Stepan Bandera'
+        
       - name: Install VCPKG
         run: |
           lsb_release -a
