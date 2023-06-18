@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-echo "Hello $1"
+echo "Hello $1 ($0)"
 os=$(lsb_release -a)
 echo "$os"
 
