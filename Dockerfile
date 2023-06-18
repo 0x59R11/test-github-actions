@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM ubuntu:bionic
 
 COPY entrypoint.sh /entrypoint.sh
 
