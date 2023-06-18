@@ -1,7 +1,6 @@
 #!/bin/sh -l
 
 echo "Hello $1"
-os=$(lsb_release -a)
-echo "$os"
-time=$(date)
+#time=$(date)
+time=$(lsb_release -a)
 echo "time=$time" >> $GITHUB_OUTPUT
